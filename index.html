@@ -1,38 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Motion Matrix</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion Matrix</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      z-index: 1;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    .button {
+      background: #5865F2;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+
+    .success-box {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 600px;
+      border-left: 4px solid #00ffcc;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Motion Matrix</h1>
-        <p>Helping you move forward in fitness and life.</p>
-    </header>
-    <section>
-        <h2>Our Services</h2>
-        <ul>
-            <li>Custom Workout Plans</li>
-            <li>Nutrition Coaching</li>
-            <li>1-on-1 Support & Accountability</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Success Stories</h2>
-        <blockquote>
-            "Lost 20 lbs in 6 weeks thanks to Motion Matrix!"
-        </blockquote>
-        <blockquote>
-            "Best support system I’ve ever had. I feel unstoppable."
-        </blockquote>
-    </section>
-    <section>
-        <h2>Join Our Community</h2>
-        <a class="discord-button" href="https://discord.gg/YOUR_INVITE_LINK" target="_blank">Join Our Discord</a>
-    </section>
-    <footer>
-        <p>© 2025 Motion Matrix. All rights reserved.</p>
-    </footer>
+
+  <header>
+    <!-- Replace this with your video file once ready -->
+    <video autoplay loop muted playsinline>
+      <source src="workout-loop.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h1>Motion Matrix</h1>
+  </header>
+
+  <section class="section">
+    <h2>Join Our Community</h2>
+    <a class="button" href="https://discord.gg/WWc9kUq2" target="_blank">Join Our Discord</a>
+  </section>
+
+  <section class="section">
+    <h2>Success Stories</h2>
+    <div class="success-box">"Lost 20 lbs in 6 weeks thanks to Motion Matrix!"</div>
+    <div class="success-box">"Best support system I’ve ever had. I feel unstoppable."</div>
+  </section>
+
 </body>
 </html>
