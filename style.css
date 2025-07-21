@@ -13,17 +13,19 @@ body, html {
 }
 
 .video-section {
-  height: 100vh;
-  width: 100vw;
   position: relative;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
 .video-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 
 .discord-section {
@@ -44,7 +46,7 @@ body, html {
 }
 
 .discord-btn {
-  padding: 12px 24px;
+  padding: 14px 26px;
   background-color: #5865F2;
   color: white;
   text-decoration: none;
