@@ -2,26 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motion Matrix</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body, html { height: 100%; overflow: hidden; }
-    video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <video autoplay loop muted playsinline>
-    <source src="background-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="background-video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section class="discord-section">
+    <h1>Join Our Community</h1>
+    <p>Tap in with Motion Matrix on Discord for workouts, meals & motivation 👇</p>
+    <a href="https://discord.gg/WWc9kUq2" target="_blank" class="discord-btn">Join the Discord</a>
+  </section>
 </body>
 </html>
