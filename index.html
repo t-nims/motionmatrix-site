@@ -4,52 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Motion Matrix</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-    /* In case your style.css isn't loaded yet */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body, html {
+    html, body {
       height: 100%;
+      width: 100%;
       overflow: hidden;
-      font-family: Arial, sans-serif;
+      background-color: black;
     }
-
-    #bg-video {
-      position: fixed;
-      right: 0;
-      bottom: 0;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
       min-width: 100%;
       min-height: 100%;
-      z-index: -1;
       object-fit: cover;
-    }
-
-    .overlay {
-      height: 100vh;
-      width: 100vw;
-      background: rgba(0, 0, 0, 0.5); /* darkens video for contrast */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    h1 {
-      font-size: 5rem;
-      color: white;
-      text-align: center;
-      letter-spacing: 2px;
     }
   </style>
 </head>
 <body>
-  <video autoplay muted loop playsinline id="bg-video">
+  <video autoplay muted loop playsinline>
     <source src="background-video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-
-  <div class="overlay">
-    <h1>Motion Matrix</h1>
-  </div>
 </body>
 </html>
