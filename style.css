@@ -1,35 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
 }
-header {
-    background: #222;
-    color: white;
-    padding: 40px;
-    text-align: center;
+
+.video-section {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
 }
-section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 8px;
+
+.video-section video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
-.discord-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #7289DA;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+
+.discord-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
 }
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
+
+.discord-section h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.discord-section p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.discord-btn {
+  padding: 12px 24px;
+  background-color: #5865F2;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.discord-btn:hover {
+  background-color: #4752C4;
 }
